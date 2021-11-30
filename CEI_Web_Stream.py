@@ -257,8 +257,13 @@ SUN_SPOT_OBSERVED_LINK = "https://services.swpc.noaa.gov/json/solar-cycle/swpc_o
 F107_LINK = "https://services.swpc.noaa.gov/json/f107_cm_flux.json"
 
 
-
-GDACS_TARGET = requests.get("https://www.gdacs.org/default.aspx").text
+try:
+    
+    GDACS_TARGET = requests.get("https://www.gdacs.org/default.aspx").text
+    
+except:
+    
+    pass
 
 
 
